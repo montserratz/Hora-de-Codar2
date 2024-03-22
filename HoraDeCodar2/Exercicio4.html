@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+var valor1 = parseFloat(prompt("Insira o primeiro número:"));
+
+var valor2 = parseFloat(prompt("Insira o segundo número:"));
+
+var valor3 = parseFloat(prompt("Insira o terceiro número:"));
+
+if (valor1 < valor2 && valor1 < valor3) {
+    var Soma = valor2 + valor3;
+ alert("A soma dos dois maiores, segundo número: " + valor2 + " e o terceiro número: " + valor3 + " é de: " + Soma);
+
+}else if (valor2 < valor1 && valor2 < valor3 ){
+    var Soma = valor1 + valor3;
+    alert("A soma dos dois maiores, primeiro número: " + valor1 + " e o terceiro número: " + valor3 + " é de: " + Soma);
+
+}else if (valor3 < valor1 && valor3 < valor2){
+    var Soma = valor1 + valor2;
+    alert("A soma dos dois maiores, primeiro número: " + valor1 + " e o segundo número: " + valor2 + " é de: " + Soma);
+}
+
+
+
+
+</script>

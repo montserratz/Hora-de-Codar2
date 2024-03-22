@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+
+var numeros = [];
+ 
+  
+        for (var i = 1; i <= 4; i++) {
+            var num = parseInt(prompt("Digite o " + i + "º valor de 0 a 10: "));
+           
+            if (num >= 0 && num <= 10) {
+                numeros.push(num);
+
+            }else {
+                alert("Números inválidos! Volte ao início (recarregue a página)");
+            }
+        }
+
+
+let soma = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+}
+    const media = soma / numeros.length;
+    alert("A média dos números é: " + media);
+
+
+
+    if (media >= 5){
+        alert("Você passou no teste, parabéns!");
+    }else {
+        alert("Tente Novamente");
+
+    }
+
+
+
+
+</script>
